@@ -82,5 +82,83 @@ footer .footer-navbar li a {
 	color: #ddd;
 }
 
+/*################## Stats #################*/
+.stats {
+	display: flex;
+	flex-wrap: wrap;
+	text-align: center;
+	justify-content: center;
+}
+.stats .stats-box {
+	color: #fff;
+	background-color: var(--primary);
+	padding: 2rem;
+	flex-grow: 1;
+}
 
+.stats .stats-box:first-child {
+	background-image: -moz-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+	background-image: -ms-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+	background-image: -o-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+	background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+}
 
+.stats .stats-box:nth-child(2) {
+	background-image: -moz-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+	background-image: -ms-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+	background-image: -o-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+	background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+}
+
+.stats .stats-box:nth-child(3) {
+	background-image: -moz-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+	background-image: -ms-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+	background-image: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+	background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+}
+
+.stats .stats-box:last-child {
+	background-image: -moz-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+	background-image: -ms-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+	background-image: -o-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+	background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+}
+
+.stats .stats-box .numbers {
+	font-size: 2.5rem;
+	font-weight: bold;
+}
+/*################## Products ##################*/
+.products {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.products .product-card {
+	background-color: #fff;
+	margin-bottom: 1rem;
+	max-width: 400px;
+	min-width: 250px;
+	border: 1px solid var(--primary);
+	border-radius: 0.5rem;
+	overflow: hidden;
+	flex-grow: 1;
+	transition: transform 0.5s;
+}
+.products .product-card .product-body {
+	padding: 1em;
+	text-align: left;
+}
+.products .product-card .product-body h3 {
+	font-size: 1.4rem;
+}
+.products .product-card img {
+	width: 100%;
+}
+.products .product-card:hover {
+	transform: scale(1.05, 1.05);
+	-o-transform: scale(1.05, 1.05);
+	-ms-transform: scale(1.05, 1.05);
+	-moz-transform: scale(1.05, 1.05);
+	-webkit-transform: scale(1.05, 1.05);
+}
