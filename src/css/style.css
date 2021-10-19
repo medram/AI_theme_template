@@ -128,6 +128,12 @@ footer .footer-navbar li a {
 	font-size: 2.5rem;
 	font-weight: bold;
 }
+
+/* .stats .stats-box:hover {
+	transition: transform .3s;
+	transform: scale(1.1, 1.1);
+} */
+
 /*################## Products ##################*/
 .products {
 	display: flex;
@@ -161,4 +167,17 @@ footer .footer-navbar li a {
 	-ms-transform: scale(1.05, 1.05);
 	-moz-transform: scale(1.05, 1.05);
 	-webkit-transform: scale(1.05, 1.05);
+}
+
+/*################## Paricles effects ##################*/
+#particles-js {
+	position: relative;
+	overflow: hidden;
+}
+
+.particles-js-canvas-el {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1 !important;
 }

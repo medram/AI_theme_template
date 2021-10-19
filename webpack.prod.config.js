@@ -74,7 +74,8 @@ module.exports = {
 		new CopyWebpackPlugin({
 			patterns: [
 				{from: 'src/imgs/', to: 'imgs/'},
-				{from: 'src/robots.txt', to: '../robots.txt'}
+				{from: 'src/robots.txt', to: '../robots.txt'},
+				{from: 'src/js/particles.json', to: 'js/particles.json'}
 			]
 		}),
 		new webpack.ProvidePlugin({
