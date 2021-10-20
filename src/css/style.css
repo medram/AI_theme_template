@@ -207,3 +207,8 @@ footer .footer-navbar li a {
 .page-body {
 	padding: 3rem 0;
 }
+/*################## FAQ style ##################*/
+
+.accordion .card-header button {
+	font-weight: bold;
+}

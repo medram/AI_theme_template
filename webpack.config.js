@@ -46,17 +46,18 @@ module.exports = {
 				}
 			},
 			{
-				test: /\.(ttf|eot|woff|woff2)$/,
+				test: /\.hbs$/,
+				loader: 'handlebars-loader'
+			},
+			{
+				test: /\.(ttf|eot|woff|woff2)(\?.*)?$/,
 				use: {
 					loader: 'file-loader',
 					options: {
-						name: "fonts/[name].[ext]",
+						name: "[name].[ext]",
+						outputPath: "fonts/"
 					},
 				}
-			},
-			{
-				test: /\.hbs$/,
-				loader: 'handlebars-loader'
 			}
 		]
 	},
