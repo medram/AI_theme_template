@@ -175,9 +175,35 @@ footer .footer-navbar li a {
 	overflow: hidden;
 }
 
+#particles-js .particles-js-canvas-el {
+	z-index: -1 !important;
+}
+
 .particles-js-canvas-el {
 	position: absolute;
 	top: 0;
 	left: 0;
-	z-index: -1 !important;
+}
+
+#header-particles {
+	position: relative;
+	overflow: hidden;
+}
+#header-particles .particles-js-canvas-el {
+
+}
+
+/*################## Page header ##################*/
+.page-header {
+	padding: 4rem 0;
+	text-align: center;
+	background-color: var(--primary);
+}
+.page-header h1 {
+	font-weight: bold;
+	color: #fff;
+}
+
+.page-body {
+	padding: 3rem 0;
 }

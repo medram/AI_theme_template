@@ -7,6 +7,12 @@ import Config from '../configs'
             console.log('callback - particles.js config loaded');
         });
     }
+    // for particles effect
+    if (Config.page_header_particles) {
+        particlesJS.load('header-particles', 'assets/js/headers_particles.json', function () {
+            console.log('callback - particles.js config loaded');
+        });
+    }
 
     // dispatch animation while scroling
     let section = document.getElementById('first-section')

@@ -1,30 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<title><%= htmlWebpackPlugin.options.title %></title>
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<meta name="description" content="AI Solutions for companies.">
-		<meta name="keywords" content="AI, ML, AI Solutions">
-	</head>
-	<body>
+{{> templates/head.hbs }}
 		<div id="particles-js">
-			<nav class="navbar navbar-expand-lg navbar-light bg-white container">
-				<a class="navbar-brand" href="#">Logo</a>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
-					aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo01">
-					<ul class="navbar-nav mt-2 mt-lg-0 d-flex text-center">
-						<li class="nav-item"><a class="nav-link" href="#">AI SOLUTIONS</a></li>
-						<li class="nav-item"><a class="nav-link" href="#">NEWS</a></li>
-						<li class="nav-item"><a class="nav-link" href="#">FAQ</a></li>
-						<li class="nav-item"><a class="nav-link" href="#">CONTACT</a></li>
-						<li class="nav-item"><a class="nav-link" href="#">ABOUT</a></li>
-						<li class="nav-item"><a class="nav-link special-nav-link" href="#">FREE DEMO</a></li>
-					</ul>
-				</div>
-			</nav>
+			{{> templates/navbar.hbs }}
 
 			<!-- jumbotron -->
 			<section class="container-fluid">
@@ -105,7 +81,8 @@
 			</div>
 		</section>
 
-		<section class="container-fluid" style="background-color: aliceblue">
+		<!-- solutions section -->
+		<section class="container-fluid" style="background-color: aliceblue" id="solutions">
 			<div class="row py-5">
 				<div class="col-sm-12 text-center">
 					<div class="container">
@@ -117,35 +94,35 @@
 				<div class="col-sm-12">
 					<div class="products mt-5">
 						<div class="product-card">
-							<a href="#"><img src="assets/imgs/posters/ai-project.jpg" alt="ai-project"></a>
+							<a href="#" target="_blank"><img src="assets/imgs/posters/ai-project.jpg" alt="ai-project"></a>
 							<div class="product-body">
-								<a href="#"><h3 class="h3 text-primary">Lorem ipsum dolor sit amet consectetur.</h3></a>
+								<a href="#" target="_blank"><h3 class="h3 text-primary">Lorem ipsum dolor sit amet consectetur.</h3></a>
 								<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores quasi pariatur veritatis. Neque, aperiam placeat?</p>
-								<a href="#" class="btn btn-primary btn-block btn-lg">Learn More</a>
+								<a href="#" target="_blank" class="btn btn-primary btn-block btn-lg">Learn More</a>
 							</div>
 						</div>
 						<div class="product-card">
-							<a href="#"><img src="assets/imgs/posters/ai-project.jpg" alt="ai-project"></a>
+							<a href="#" target="_blank"><img src="assets/imgs/posters/ai-project.jpg" alt="ai-project"></a>
 							<div class="product-body">
-								<a href="#"><h3 class="h3 text-primary">Lorem ipsum dolor sit amet consectetur.</h3></a>
+								<a href="#" target="_blank"><h3 class="h3 text-primary">Lorem ipsum dolor sit amet consectetur.</h3></a>
 								<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores quasi pariatur veritatis. Neque, aperiam placeat?</p>
-								<a href="#" class="btn btn-primary btn-block btn-lg">Learn More</a>
+								<a href="#" target="_blank" class="btn btn-primary btn-block btn-lg">Learn More</a>
 							</div>
 						</div>
 						<div class="product-card">
-							<a href="#"><img src="assets/imgs/posters/ai-project.jpg" alt="ai-project"></a>
+							<a href="#" target="_blank"><img src="assets/imgs/posters/ai-project.jpg" alt="ai-project"></a>
 							<div class="product-body">
-								<a href="#"><h3 class="h3 text-primary">Lorem ipsum dolor sit amet consectetur.</h3></a>
+								<a href="#" target="_blank"><h3 class="h3 text-primary">Lorem ipsum dolor sit amet consectetur.</h3></a>
 								<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores quasi pariatur veritatis. Neque, aperiam placeat?</p>
-								<a href="#" class="btn btn-primary btn-block btn-lg">Learn More</a>
+								<a href="#" target="_blank" class="btn btn-primary btn-block btn-lg">Learn More</a>
 							</div>
 						</div>
 						<div class="product-card">
-							<a href="#"><img src="assets/imgs/posters/ai-project.jpg" alt="ai-project"></a>
+							<a href="#" target="_blank"><img src="assets/imgs/posters/ai-project.jpg" alt="ai-project"></a>
 							<div class="product-body">
-								<a href="#"><h3 class="h3 text-primary">Lorem ipsum dolor sit amet consectetur.</h3></a>
+								<a href="#" target="_blank"><h3 class="h3 text-primary">Lorem ipsum dolor sit amet consectetur.</h3></a>
 								<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores quasi pariatur veritatis. Neque, aperiam placeat?</p>
-								<a href="#" class="btn btn-primary btn-block btn-lg">Learn More</a>
+								<a href="#" target="_blank" class="btn btn-primary btn-block btn-lg">Learn More</a>
 							</div>
 						</div>
 					</div>
@@ -244,7 +221,7 @@
 		</section>
 
 		<!-- Contact us section -->
-		<section class="container-fluid" style="background-color: aliceblue">
+		<section class="container-fluid" style="background-color: aliceblue" id="contact">
 			<div class="container">
 				<div class="row py-5">
 					<div class="col-sm-12 text-center mb-5">
@@ -266,41 +243,4 @@
 			</div>
 		</section>
 
-		<!-- Footer section -->
-		<footer class="container-fluid">
-			<div class="container">
-				<div class="row py-5">
-					<div class="col-md-6">
-						<h3 class="h3 display-5 font-weight-bold">Brand</h3>
-						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure culpa voluptatibus, voluptates itaque sed architecto amet quisquam modi qui consequuntur placeat consequatur, rerum nulla porro sequi officiis rem! Alias, fugiat?</p>
-					</div>
-					<div class="col-md-6">
-						<h3 class="h3 font-weight-bold">Follow Us on Social Media</h3>
-						<div>
-							<a href="#" target="_blank"><img src="assets/imgs/social_media/facebook.png" alt="facebook"></a>
-							<a href="#" target="_blank"><img src="assets/imgs/social_media/github.png" alt="github"></a>
-							<a href="#" target="_blank"><img src="assets/imgs/social_media/linkedin.png" alt="linkedin"></a>
-							<a href="#" target="_blank"><img src="assets/imgs/social_media/twitter.png" alt="twitter"></a>
-							<a href="#" target="_blank"><img src="assets/imgs/social_media/reddit.png" alt="reddit"></a>
-							<a href="#" target="_blank"><img src="assets/imgs/social_media/youtube.png" alt="youtube"></a>
-							<a href="#" target="_blank"><img src="assets/imgs/social_media/instagram.png" alt="instagram"></a>
-							<a href="#" target="_blank"><img src="assets/imgs/social_media/tumblr.png" alt="tumblr"></a>
-							<a href="#" target="_blank"><img src="assets/imgs/social_media/pinterest.png" alt="pinterest"></a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="row copyright">
-				<div class="col-sm-12 text-center display-6">
-					<span class="text-light">2021 &copy; Brand, all right reserved.</span>
-				</div>
-				<ul class="footer-navbar">
-					<li><a href="#">About</a></li>
-					<li><a href="#">Terms of use</a></li>
-					<li><a href="#">Privacy policy</a></li>
-					<li><a href="#">Contact</a></li>
-				</ul>
-			</div>
-		</footer>
-	</body>
-</html>
+{{> templates/footer.hbs }}
