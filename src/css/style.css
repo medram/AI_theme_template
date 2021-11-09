@@ -9,6 +9,13 @@
 .navbar-light .navbar-brand {
 	font-weight: bold;
 	color: var(--primary);
+	display: flex;
+	justify-content: center;
+    align-items: center;
+}
+
+.navbar-light .navbar-brand i {
+	margin-right: 0.5rem;
 }
 
 .navbar-light .navbar-nav .nav-item {
@@ -211,4 +218,12 @@ footer .footer-navbar li a {
 
 .accordion .card-header button {
 	font-weight: bold;
+}
+
+.navbar-brand i {
+	font-size: 1.7rem;
+}
+
+.text-muted {
+	color: #000 !important;
 }
