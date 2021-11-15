@@ -19,13 +19,15 @@ import Config from '../configs'
     let section2 = document.getElementById('secound-section')
     let section3 = document.getElementById('stats')
     let section4 = document.getElementById('companies-section')
+    let section5 = document.getElementById('steps-container')
 
     // list all sections to be registered later
     const sections = [
         section,
         section2,
         section3,
-        section4
+        section4,
+        section5,
     ]
 
     //console.log(section)
@@ -49,6 +51,9 @@ import Config from '../configs'
                         break
                     case section4.getAttribute('id'):
                         target.classList.add("animate__fadeInLeft")
+                        break
+                    case section5.getAttribute('id'):
+                        target.classList.add("animate__fadeInUp")
                         break
                 }
             }
