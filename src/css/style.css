@@ -227,3 +227,124 @@ footer .footer-navbar li a {
 .text-muted {
 	color: #000 !important;
 }
+
+/*################## steps style ##################*/
+
+.steps-container {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	position: relative;
+	margin-top: 4rem;
+	margin-bottom: 4rem;
+	text-align: center;
+}
+
+.steps-container .step {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	/* background-color: #CCC; */
+	padding: 1rem;
+}
+
+.steps-container .step:hover {
+	background-color: #F5F5F5;
+	border-radius: 1rem;
+}
+
+.steps-container::before {
+	transform: translate(-2%, 0%);
+	content: '';
+	position: absolute;
+	top: 55px;
+	left: 0;
+	display: block;
+	height: 0.4rem;
+	width: 105%;
+	background-color: var(--primary);
+	background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6));
+	z-index: 0;
+	border-radius: 50rem !important;
+}
+
+.steps-container::after {
+	transform: translate(-2%, 0%);
+	content: '';
+	position: absolute;
+	top: 55px;
+	left: 0;
+	display: block;
+	height: 0.4rem;
+	width: 105%;
+	background-color: var(--primary);
+	z-index: 1;
+	border-radius: 50rem !important;
+}
+
+.steps-container .step i {
+	color: var(--primary);
+	background-color: #FFF;
+	font-size: 1.5rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 5rem !important;
+	height: 5rem !important;
+	min-width: 5rem !important;
+	min-height: 5rem !important;
+	margin-bottom: 1rem !important;
+	margin: 0;
+	border: 2px solid var(--primary);
+	border-radius: 50%;
+	z-index: 2 !important;
+}
+
+.steps-container .step:hover i {
+	background-color: var(--primary);
+	color: #FFF;
+	transition: all 0.3s;
+}
+
+.steps-container .step span {
+	color: var(--primary);
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.steps-container .step p {
+
+}
+
+@media screen and (max-width: 700px) {
+	.steps-container {
+		flex-direction: column;
+	}
+
+	.steps-container .step {
+		flex-direction: row;
+	}
+
+	.steps-container .step .step-content {
+		text-align: left;
+		padding-left: 1rem;
+	}
+
+	.steps-container::before {
+		transform: translate(0%, -4%);
+		height: 107%;
+		width: 0.4rem;
+		top: 0;
+		left: 53px;
+	}
+
+	.steps-container::after {
+		transform: translate(0%, -4%);
+		height: 107%;
+		width: 0.4rem;
+		top: 0;
+		left: 53px;
+	}
+}
