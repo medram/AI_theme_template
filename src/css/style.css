@@ -150,30 +150,66 @@ footer .footer-navbar li a {
 .products .product-card {
 	background-color: #fff;
 	margin-bottom: 1rem;
-	max-width: 400px;
-	min-width: 250px;
-	border: 1px solid var(--primary);
+	border: 1px solid #DDD;
+	margin-left: 0.5rem;
+	margin-right: 0.5rem;
 	border-radius: 0.5rem;
 	overflow: hidden;
+	flex-basis: 400px;
 	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
 	transition: transform 0.5s;
 }
 .products .product-card .product-body {
 	padding: 1em;
 	text-align: left;
+	flex-grow: 1;
+	overflow: hidden;
 }
 .products .product-card .product-body h3 {
 	font-size: 1.4rem;
+	font-weight: blod;
 }
 .products .product-card img {
 	width: 100%;
+	height: 280px;
 }
 .products .product-card:hover {
-	transform: scale(1.05, 1.05);
-	-o-transform: scale(1.05, 1.05);
-	-ms-transform: scale(1.05, 1.05);
-	-moz-transform: scale(1.05, 1.05);
-	-webkit-transform: scale(1.05, 1.05);
+	transform: scale(1.03, 1.03);
+	-o-transform: scale(1.03, 1.03);
+	-ms-transform: scale(1.03, 1.03);
+	-moz-transform: scale(1.03, 1.03);
+	-webkit-transform: scale(1.03, 1.03);
+}
+
+.products .product-card .product-body {
+	display: flex;
+	flex-direction: column;
+}
+
+.products .product-card .product-body p {
+	display: block;
+	flex-grow: 1;
+}
+
+
+/* @media screen and (min-width: 1000px) {
+	.products .product-card {
+		flex-basis: 30%;
+	}
+} */
+
+@media screen and (max-width: 800px) {
+	.products .product-card {
+		margin-left: 5px;
+		margin-right: 5px;
+	}
+
+	.products .product-card img {
+		height: 200px;
+	}
+
 }
 
 /*################## Paricles effects ##################*/
@@ -246,6 +282,7 @@ footer .footer-navbar li a {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	min-width: 20%;
 	/* background-color: #CCC; */
 	padding: 1rem;
 }
@@ -318,7 +355,7 @@ footer .footer-navbar li a {
 
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 800px) {
 	.steps-container {
 		flex-direction: column;
 	}
